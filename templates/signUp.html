@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %}Login{% endblock %}
+{% block title %}Sign Up{% endblock %}
 
 {% block body %}
-    <!----------------------- Main Container --------------------------->
+    <!----------------------- Main Container -------------------------->
 
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
 
@@ -21,33 +21,37 @@
                 <small class="text-white text-wrap text-center" style="width: 17rem;font-family: 'Courier New', Courier, monospace;">by: DEADLINE DESTROYERS</small>
             </div> 
 
-    <!--------------------------- Right Box ---------------------------->
+    <!-------------------- ------ Right Box ---------------------------->
         
             <div class="col-md-6 right-box">
                 <div class="row align-items-center">
                     <div class="header-text mb-4">
-                        <h2 class="ms-3">Login!</h2>
+                        <h2 class="ms-3">Sign Up</h2>
                         <p class="ms-3">Welcome!</p>
                     </div>
-                    <form method="POST">
-                        <div class="input-group mb-3">
-                            <input name="email" id="email" type="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email address" required>
-                        </div>
-                        <div class="input-group mb-1">
-                            <input name="password" id="password" type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password" required>
-                        </div>
-                        <div class="input-group mb-3 mt-5">
-                            <button type="submit" class="btn btn-lg btn-primary w-100 fs-6">Login</a>
-                        </div>
-                    </form>
-                    <div class="row"></div>
-                        <small>Don't have account? <a href="/sign-up">Sign Up</a></small>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Full Name">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email address">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
+                    </div>
+                    <div class="input-group mb-1">
+                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Comfirm Password">
+                    </div>
+                    <div class="input-group mb-3 mt-5">
+                        <a href="" class="btn btn-lg btn-primary w-100 fs-6">Sign Up</a>
+                    </div>
+                    <div class="row">
+                        <small>Already have an account? <a href="/">Login.</a></small>
                     </div>
                 </div>
-            </div>
+            </div> 
 
         </div>
-
+    
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
