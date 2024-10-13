@@ -29,6 +29,9 @@
                         <h2 class="ms-3">Login!</h2>
                         <p class="ms-3">Welcome!</p>
                     </div>
+                    {% if invalid %}
+                    <h5>Incorrect email or password!</h5>
+                    {% endif %}
                     <form method="POST">
                         <div class="input-group mb-3">
                             <input name="email" id="email" type="email" class="form-control form-control-lg bg-light fs-6" placeholder="Email address" required>
